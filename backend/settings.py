@@ -71,9 +71,6 @@ CORS_ORIGIN_WHITELIST = (
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = [
-    'localhost',
-]
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -156,7 +153,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
-STATICFILES_DIRS = [    os.path.join(BASE_DIR, 'build/static')]
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'build/static')]
 MEDIA_ROOT = os.path.join(BASE_DIR, '/static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
